@@ -22,7 +22,7 @@ print('''
 ---------------------------------------------------
 
     HEEEEEUUUUUUJ LEKKER FRITSEN
-    PAK JE DRANK EN GENIET VAN HET SPELLETJE
+         GRAP YOUR DRINK AND ENJOY!
 
       ########        ##########
       **********     $$$$$$$$$$$
@@ -64,4 +64,15 @@ else:
 starter = random.choice(names)
 print(f"\n\t\t{starter} starts!")
 
- 
+turn = input('''
+[ENTER] to throw
+(score) for scoreboard
+(quit) to terminate the game
+''')
+
+if turn == "":
+    throw()
+elif turn == "score":
+    score()
+elif turn == "quit":
+    quit()
