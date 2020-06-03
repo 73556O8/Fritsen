@@ -56,9 +56,9 @@ if main == "a":
 elif main == "b":
     settings()
 elif main != "a" or "b":
-    print("\n\t\tDit klopt niet, doe a of b")
+    print("\n\t\tError 422: input not valid")
 else:
-    print("\n\t\tJeeeezus jij bent al dronken, ga slapen")
+    print("\n\t\tJeez, you're drunk. Go to bed.")
     sys.exit(1)
 
 starter = random.choice(names)
