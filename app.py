@@ -32,9 +32,10 @@ print('''
        *********      $$$$$$$$$
 
 ---------------------------------------------------\n
-Python 3.6.9                        Dylan Wesselink
+Python 3.6.9                                73556O8
 ''')
 
+### This is the loading bar
 # for i in tqdm(mylist):
 #     time.sleep(1)
 
