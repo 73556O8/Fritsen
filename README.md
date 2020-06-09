@@ -1,2 +1,2 @@
-# Fritsen
-Tactical 
+# Fritzen
+Tactical Drinking Game
