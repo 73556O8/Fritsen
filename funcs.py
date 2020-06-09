@@ -4,18 +4,18 @@ names = []
 # I M P O R T S
 from os import system, name 
 from time import sleep 
-from app import names
+
 
 # F U N C T I O N S
 # get user input
-def ap():
-    global amountPlayers
-    amountPlayers = input("\n\t\tAmount of players: ")
+def amountPlayers():
+    global ap
+    ap = input("\n\t\tAmount of players: ")
     print("\n")
-    return amountPlayers
+    return ap
 
 def playerNames():
-    for i in range(int(amountPlayers)):
+    for i in range(int(ap)):
         i += 1
         global names
         print(f"\t\tName {i}: ", end=' '),

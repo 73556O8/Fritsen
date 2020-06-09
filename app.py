@@ -3,15 +3,19 @@ Fritsen Drinking Game
 73556O8
 '''
 
+
+
 # imports
 import dice
-from functions import *
+from funcs import *
 
 import time
 import sys
 import random
 
-# from tqdm import tqdm
+sys.path.append(sys.path.append("/home/dylan/code/Fritsen/venv/bin/python3"))
+
+from tqdm import tqdm
 
 # variables
 mylist = [1,2,3,4,5,6,7,8]
@@ -36,8 +40,10 @@ Python 3.6.9                                73556O8
 ''')
 
 ### This is the loading bar
-# for i in tqdm(mylist):
-#     time.sleep(1)
+for i in tqdm(mylist):
+    time.sleep(1)
+
+clear()
 
 main = input('''
 ---------------------------------------------------
@@ -50,10 +56,12 @@ main = input('''
                     > ''')
 
 if main == "a":
-    ap()
+    clear()
+    amountPlayers()
     playerNames()
     sips = int(input("\n\t\tAmount of points per sip: "))
 elif main == "b":
+    clear()
     settings()
 elif main != "a" or "b":
     print("\n\t\tError 422: input not valid")
@@ -61,13 +69,14 @@ else:
     print("\n\t\tJeez, you're drunk. Go to bed.")
     sys.exit(1)
 
+clear()
 starter = random.choice(names)
 print(f"\n\t\t{starter} starts!")
 
 turn = input('''
-[ENTER] to throw
-(score) for scoreboard
-(quit) to terminate the game
+\n\t\t[ENTER] to throw
+  \t\t(score) for scoreboard
+  \t\t(quit) to terminate the game
 ''')
 
 if turn == "":
