@@ -45,3 +45,14 @@ def score():
 # terminate the game
 def quit():
     _ = system('^C') 
+
+# throw function /w physical dices
+def throwPhysical():
+    print("\n\t\tTHROW NOW")
+    sleep(1)
+    
+    collectPoints = int(input('''
+                    Enter amount of points
+
+                    >  '''))
+    return collectPoints

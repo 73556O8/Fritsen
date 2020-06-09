@@ -41,7 +41,7 @@ Python 3.6.9                                73556O8
 
 ### This is the loading bar
 for i in tqdm(mylist):
-    time.sleep(1)
+    time.sleep(0.2)
 
 clear()
 
@@ -53,13 +53,15 @@ main = input('''
                     (b) Settings
                     (c) Dices
 
-                    > ''')
+                    >  ''')
 
 if main == "a":
     clear()
+    gameMode = input("\n\t\tDo you have real dices? [y / n] \n\n\t\t>  ")
     amountPlayers()
     playerNames()
-    sips = int(input("\n\t\tAmount of points per sip: "))
+    starter = random.choice(names)
+    shots = int(input("\n\t\tAmount of points per shot: "))
 elif main == "b":
     clear()
     settings()
@@ -70,18 +72,20 @@ else:
     sys.exit(1)
 
 clear()
-starter = random.choice(names)
-print(f"\n\t\t{starter} starts!")
 
-turn = input('''
-\n\t\t[ENTER] to throw
-  \t\t(score) for scoreboard
-  \t\t(quit) to terminate the game
-''')
+# print(f"\n\t\t{starter.upper()} STARTS!")
 
-if turn == "":
-    throw()
-elif turn == "score":
-    score()
-elif turn == "quit":
-    quit()
+throwPhysical()
+
+# turn = input('''
+# \n\t\t[ENTER] to throw
+#   \t\t(score) for scoreboard
+#   \t\t(quit) to terminate the game
+# ''')
+
+# if turn == "":
+#     throw()
+# elif turn == "score":
+#     score()
+# elif turn == "quit":
+#     quit()
