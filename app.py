@@ -13,8 +13,6 @@ import time
 import sys
 import random
 
-sys.path.append(sys.path.append("/home/dylan/code/Fritsen/venv/bin/python3"))
-
 from tqdm import tqdm
 
 # variables
