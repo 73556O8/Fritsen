@@ -23,8 +23,8 @@ mylist = [1,2,3,4,5,6,7,8]
 print('''
 ---------------------------------------------------
 
-    HEEEEEUUUUUUJ LEKKER FRITSEN
-         GRAP YOUR DRINK AND ENJOY!
+    HEEEEEUUUUUUJ LEKKER FRITZEN
+         GRAB YOUR DRINK AND ENJOY!
 
       ########        ##########
       **********     $$$$$$$$$$$
@@ -73,7 +73,12 @@ clear()
 
 # print(f"\n\t\t{starter.upper()} STARTS!")
 
-throwPhysical()
+if gameMode == "y":
+    throwPhysical()
+else:
+    print("This is under construction")
+
+print(collectPoints)
 
 # turn = input('''
 # \n\t\t[ENTER] to throw

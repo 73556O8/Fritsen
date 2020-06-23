@@ -49,8 +49,8 @@ def quit():
 # throw function /w physical dices
 def throwPhysical():
     print("\n\t\tTHROW NOW")
-    sleep(1)
-    
+    sleep(4)
+    global collectPoints
     collectPoints = int(input('''
                     Enter amount of points
 
