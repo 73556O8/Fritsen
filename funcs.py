@@ -50,9 +50,30 @@ def quit():
 def throwPhysical():
     print("\n\t\tTHROW NOW")
     sleep(4)
-    global collectPoints
-    collectPoints = int(input('''
+    
+    global collectPoints = int(input('''
                     Enter amount of points
 
                     >  '''))
+
     return collectPoints
+
+def pointsTurn(x):
+    return 5*x
+
+class person():
+
+    amount_players = 0
+    raise_scoring = collectPoints
+
+    def scores(self, fname, scoring):
+        self.fname = fname
+        self.scoring = int(scoring)
+
+    def scoreInfo(self):
+        return '{} {}'.format(self.fname, self.scoring)
+
+    def apply_points(self):
+        self.scoring = int(self.scoring + self.raise_scoring)
+
+

@@ -20,22 +20,25 @@ mylist = [1,2,3,4,5,6,7,8]
 
 
 # main menu
-print('''
----------------------------------------------------
+def banner():
+    print('''
+    ---------------------------------------------------
 
-    HEEEEEUUUUUUJ LEKKER FRITZEN
-         GRAB YOUR DRINK AND ENJOY!
+        HEEEEEUUUUUUJ LEKKER FRITZEN
+            GRAB YOUR DRINK AND ENJOY!
 
-      ########        ##########
-      **********     $$$$$$$$$$$
-      ********  **  $$  $$$$$$$$
-      ********  **  $$  $$$$$$$$
-      ******** **    $$ $$$$$$$$ 
-       *********      $$$$$$$$$
+        ########        ##########
+        **********     $$$$$$$$$$$
+        ********  **  $$  $$$$$$$$
+        ********  **  $$  $$$$$$$$
+        ******** **    $$ $$$$$$$$ 
+        *********      $$$$$$$$$
 
----------------------------------------------------\n
-Python 3.6.9                                73556O8
-''')
+    ---------------------------------------------------\n
+    Python 3.6.9                                73556O8
+    ''')
+
+banner()
 
 ### This is the loading bar
 for i in tqdm(mylist):
@@ -71,7 +74,7 @@ else:
 
 clear()
 
-# print(f"\n\t\t{starter.upper()} STARTS!")
+print(f"\n\t\t{starter.upper()} STARTS!")
 
 if gameMode == "y":
     throwPhysical()
